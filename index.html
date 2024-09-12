@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .video-section, .notes-section {
+            margin-bottom: 40px;
+        }
+        .video-item {
+            margin-bottom: 20px;
+        }
+        .note-item {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .note-item button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .note-content {
+            display: none;
+            margin-top: 10px;
+        }
+        footer {
+            //background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome Aspirents</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <section id="home">
+    <h2>Welcome to the Ultimate UPSC Preparation Hub</h2>
+    <p>Welcome to your one-stop destination for all things related to UPSC preparation. Whether you're just starting your journey or are deep into your studies, our platform is here to support and guide you every step of the way.</p>
+
+    <h3>Your Path to Success Starts Here</h3>
+    <p>The Union Public Service Commission (UPSC) exams are a gateway to some of the most prestigious positions in the Indian government. We understand the challenges and demands of preparing for these exams, and we are dedicated to providing you with the best resources and tools to help you succeed.</p>
+
+    <h3>What We Offer</h3>
+    <ul>
+        <li><strong>Comprehensive Study Materials:</strong> Access a wide range of study materials, including detailed notes, summaries, and expert articles to enhance your understanding of various subjects.</li>
+        <li><strong>High-Quality Video Lectures:</strong> Watch in-depth video lectures covering key topics and concepts to supplement your learning and clarify doubts.</li>
+        <li><strong>Practice Tests and Mock Exams:</strong> Test your knowledge and improve your exam skills with our collection of practice tests and mock exams designed to simulate the real UPSC test environment.</li>
+        <li><strong>Current Affairs Updates:</strong> Stay updated with the latest news and current affairs, which are crucial for the General Studies papers and interview preparation.</li>
+        <li><strong>Community Support:</strong> Connect with fellow aspirants through our forums and discussion boards. Share your experiences, ask questions, and find encouragement from others on the same journey.</li>
+    </ul>
+
+    <h3>Get Started</h3>
+    <p>Explore our resources, join our community, and start your preparation with confidence. Remember, every great achievement begins with the decision to try. Your commitment and hard work will pave the way to success.</p>
+
+    <p>Let’s embark on this journey together and make your UPSC preparation as effective and efficient as possible. Good luck, and stay focused!</p>
+</section>
+
+        </section>
+        <div section id="about">
+            <h2>About</h2>
+            <p>The Union Public Service Commission (UPSC) is one of India's premier recruitment agencies, responsible for conducting prestigious examinations such as the Civil Services Examination (CSE), Indian Forest Service (IFS) Examination, and more. Preparing for these examinations is a rigorous and challenging journey that requires dedication, strategic planning, and perseverance.</p>
+</p>
+        </section>
+    
+    
+        
+        <section id="notes" class="notes-section">
+            <h2>Study Notes</h2>
+            <div class="note-item">
+                <h3>HTML Basics</h3>
+                <button onclick="toggleContent('note1')">Show/Hide Notes</button>
+                <div id="note1" class="note-content">
+                    <p>HTML stands for HyperText Markup Language...</p>
+                </div>
+            </div>
+            <div class="note-item">
+                <h3>CSS Fundamentals</h3>
+                <button onclick="toggleContent('note2')">Show/Hide Notes</button>
+                <div id="note2" class="note-content">
+                    <p>CSS stands for Cascading Style Sheets...</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, please email us at <a href="mailto:bhavendra200@gmail.com">bhavendra200@gmail.com</a></p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Educational Platform. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
